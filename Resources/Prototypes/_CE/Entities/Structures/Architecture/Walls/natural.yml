@@ -37,6 +37,7 @@
             max: 5
       - !type:DoActsBehavior
         acts: ["Destruction"]
+  - type: CERockReplacementMarker
 
 - type: entity
   id: CEWallStoneIndestructable
@@ -222,9 +223,9 @@
             volume: 15
       - !type:SpawnEntitiesBehavior
         spawn:
-          CESnowball:
-            min: 3
-            max: 5
+          CESnowBlock1:
+            min: 2
+            max: 4
       - !type:SpawnEntitiesBehavior
         spawn:
           CESnowEffect:
@@ -232,3 +233,6 @@
             max: 3
       - !type:DoActsBehavior
         acts: ["Destruction"]
+  - type: Construction
+    graph: CEWallSnow
+    node: CEWallSnow
